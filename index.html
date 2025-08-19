@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bringing Web Pages to Life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive CSS & JavaScript Demo</h1>
+
+  <!-- Part 1: CSS Animations -->
+  <button class="animated-btn">Hover Me!</button>
+
+  <!-- Animated box triggered by JS -->
+  <div id="box"></div>
+  <button id="animateBoxBtn">Animate Box</button>
+
+  <!-- Popup Modal -->
+  <button id="openModalBtn">Open Modal</button>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <p>This is a modal with animations!</p>
+      <button id="closeModalBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
