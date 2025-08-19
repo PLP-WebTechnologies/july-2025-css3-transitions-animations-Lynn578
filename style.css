@@ -1,0 +1,67 @@
+/* Part 1: Transitions & Keyframes */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.animated-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-btn:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+
+/* Box with animation triggered by JS */
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 20px auto;
+  border-radius: 8px;
+  transition: transform 1s ease-in-out;
+}
+
+.animate {
+  transform: translateY(150px) rotate(180deg);
+}
+
+/* Keyframes example */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Modal with fade-in/out */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.modal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  animation: pulse 1.5s infinite;
+}
